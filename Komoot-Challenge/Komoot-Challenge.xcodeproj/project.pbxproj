@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B310D34F2869273F009DA717 /* PhotoStorageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B310D34E2869273F009DA717 /* PhotoStorageInteractor.swift */; };
+		B3AFD1FC2866DF86007E4FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD1FB2866DF86007E4FF1 /* AppDelegate.swift */; };
+		B3AFD2002866DF86007E4FF1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD1FF2866DF86007E4FF1 /* RootViewController.swift */; };
+		B3AFD2062866DF86007E4FF1 /* Komoot_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2042866DF86007E4FF1 /* Komoot_Challenge.xcdatamodeld */; };
+		B3AFD2082866DF88007E4FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AFD2072866DF88007E4FF1 /* Assets.xcassets */; };
+		B3AFD20B2866DF88007E4FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AFD2092866DF88007E4FF1 /* LaunchScreen.storyboard */; };
+		B3AFD2162866DF88007E4FF1 /* Komoot_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2152866DF88007E4FF1 /* Komoot_ChallengeTests.swift */; };
+		B3AFD2202866DF88007E4FF1 /* Komoot_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD21F2866DF88007E4FF1 /* Komoot_ChallengeUITests.swift */; };
+		B3AFD2222866DF88007E4FF1 /* Komoot_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2212866DF88007E4FF1 /* Komoot_ChallengeUITestsLaunchTests.swift */; };
+		B3AFD22F2866E050007E4FF1 /* LocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD22E2866E050007E4FF1 /* LocationPermissionsViewController.swift */; };
+		B3AFD2322866F3D0007E4FF1 /* KomootLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2312866F3D0007E4FF1 /* KomootLocationService.swift */; };
+		B3AFD2342866F9F6007E4FF1 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2332866F9F6007E4FF1 /* PhotosViewController.swift */; };
+		B3AFD2362866FF08007E4FF1 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2352866FF08007E4FF1 /* PhotoCollectionViewCell.swift */; };
+		B3AFD2382867484E007E4FF1 /* FlickrAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2372867484E007E4FF1 /* FlickrAPIService.swift */; };
+		B3AFD23C286757E3007E4FF1 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD23B286757E3007E4FF1 /* PhotoViewModel.swift */; };
+		B3AFD23E28675802007E4FF1 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD23D28675802007E4FF1 /* PhotoListViewModel.swift */; };
+		B3AFD24028679318007E4FF1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD23F28679318007E4FF1 /* Coordinator.swift */; };
+		B3AFD2482867C65B007E4FF1 /* KomootLocationServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2472867C65B007E4FF1 /* KomootLocationServiceType.swift */; };
+		B3AFD24A2867CA06007E4FF1 /* KomootLocationService+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2492867CA06007E4FF1 /* KomootLocationService+CLLocationManagerDelegate.swift */; };
+		B3AFD24C2867CAFC007E4FF1 /* FlickrAPIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD24B2867CAFC007E4FF1 /* FlickrAPIServiceType.swift */; };
+		B3AFD24E2867CEA4007E4FF1 /* FlickrAPIService+URLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD24D2867CEA4007E4FF1 /* FlickrAPIService+URLHelpers.swift */; };
+		B3AFD2502867D001007E4FF1 /* FlickrAPIService+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD24F2867D001007E4FF1 /* FlickrAPIService+Models.swift */; };
+		B3AFD2522867D129007E4FF1 /* LocationServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2512867D129007E4FF1 /* LocationServicesInteractor.swift */; };
+		B3AFD2542867D15F007E4FF1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD2532867D15F007E4FF1 /* MainCoordinator.swift */; };
+		B3AFD25A28680D01007E4FF1 /* FlickrServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AFD25928680D01007E4FF1 /* FlickrServicesInteractor.swift */; };
+		B3E44B552868A1E0008D41D6 /* KomootLocationService+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E44B542868A1E0008D41D6 /* KomootLocationService+Models.swift */; };
+		B3E44B592868BEAF008D41D6 /* FlickrAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E44B582868BEAE008D41D6 /* FlickrAPIKeys.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3AFD2122866DF88007E4FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AFD1F02866DF86007E4FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3AFD1F72866DF86007E4FF1;
+			remoteInfo = "Komoot-Challenge";
+		};
+		B3AFD21C2866DF88007E4FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AFD1F02866DF86007E4FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3AFD1F72866DF86007E4FF1;
+			remoteInfo = "Komoot-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B310D34E2869273F009DA717 /* PhotoStorageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStorageInteractor.swift; sourceTree = "<group>"; };
+		B3AFD1F82866DF86007E4FF1 /* Komoot-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Komoot-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AFD1FB2866DF86007E4FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3AFD1FF2866DF86007E4FF1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B3AFD2052866DF86007E4FF1 /* Komoot_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Komoot_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		B3AFD2072866DF88007E4FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3AFD20A2866DF88007E4FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3AFD20C2866DF88007E4FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3AFD2112866DF88007E4FF1 /* Komoot-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Komoot-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AFD2152866DF88007E4FF1 /* Komoot_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Komoot_ChallengeTests.swift; sourceTree = "<group>"; };
+		B3AFD21B2866DF88007E4FF1 /* Komoot-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Komoot-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AFD21F2866DF88007E4FF1 /* Komoot_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Komoot_ChallengeUITests.swift; sourceTree = "<group>"; };
+		B3AFD2212866DF88007E4FF1 /* Komoot_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Komoot_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3AFD22E2866E050007E4FF1 /* LocationPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionsViewController.swift; sourceTree = "<group>"; };
+		B3AFD2312866F3D0007E4FF1 /* KomootLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomootLocationService.swift; sourceTree = "<group>"; };
+		B3AFD2332866F9F6007E4FF1 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		B3AFD2352866FF08007E4FF1 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		B3AFD2372867484E007E4FF1 /* FlickrAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPIService.swift; sourceTree = "<group>"; };
+		B3AFD23B286757E3007E4FF1 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		B3AFD23D28675802007E4FF1 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		B3AFD23F28679318007E4FF1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B3AFD2472867C65B007E4FF1 /* KomootLocationServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KomootLocationServiceType.swift; sourceTree = "<group>"; };
+		B3AFD2492867CA06007E4FF1 /* KomootLocationService+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KomootLocationService+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
+		B3AFD24B2867CAFC007E4FF1 /* FlickrAPIServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPIServiceType.swift; sourceTree = "<group>"; };
+		B3AFD24D2867CEA4007E4FF1 /* FlickrAPIService+URLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlickrAPIService+URLHelpers.swift"; sourceTree = "<group>"; };
+		B3AFD24F2867D001007E4FF1 /* FlickrAPIService+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlickrAPIService+Models.swift"; sourceTree = "<group>"; };
+		B3AFD2512867D129007E4FF1 /* LocationServicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesInteractor.swift; sourceTree = "<group>"; };
+		B3AFD2532867D15F007E4FF1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B3AFD25928680D01007E4FF1 /* FlickrServicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrServicesInteractor.swift; sourceTree = "<group>"; };
+		B3E44B542868A1E0008D41D6 /* KomootLocationService+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KomootLocationService+Models.swift"; sourceTree = "<group>"; };
+		B3E44B582868BEAE008D41D6 /* FlickrAPIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPIKeys.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3AFD1F52866DF86007E4FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AFD20E2866DF88007E4FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AFD2182866DF88007E4FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3AFD1EF2866DF86007E4FF1 = {
+			isa = PBXGroup;
+			children = (
+				B3AFD1FA2866DF86007E4FF1 /* Komoot-Challenge */,
+				B3AFD2142866DF88007E4FF1 /* Komoot-ChallengeTests */,
+				B3AFD21E2866DF88007E4FF1 /* Komoot-ChallengeUITests */,
+				B3AFD1F92866DF86007E4FF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3AFD1F92866DF86007E4FF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD1F82866DF86007E4FF1 /* Komoot-Challenge.app */,
+				B3AFD2112866DF88007E4FF1 /* Komoot-ChallengeTests.xctest */,
+				B3AFD21B2866DF88007E4FF1 /* Komoot-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3AFD1FA2866DF86007E4FF1 /* Komoot-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD2412867B50C007E4FF1 /* App */,
+				B3E44B562868A862008D41D6 /* User Interface Scenes */,
+				B3AFD2422867B51D007E4FF1 /* Coordinators */,
+				B3AFD2302866F3B0007E4FF1 /* Services */,
+				B3AFD2072866DF88007E4FF1 /* Assets.xcassets */,
+				B3AFD2092866DF88007E4FF1 /* LaunchScreen.storyboard */,
+				B3AFD20C2866DF88007E4FF1 /* Info.plist */,
+				B3AFD2042866DF86007E4FF1 /* Komoot_Challenge.xcdatamodeld */,
+			);
+			path = "Komoot-Challenge";
+			sourceTree = "<group>";
+		};
+		B3AFD2142866DF88007E4FF1 /* Komoot-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD2152866DF88007E4FF1 /* Komoot_ChallengeTests.swift */,
+			);
+			path = "Komoot-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		B3AFD21E2866DF88007E4FF1 /* Komoot-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD21F2866DF88007E4FF1 /* Komoot_ChallengeUITests.swift */,
+				B3AFD2212866DF88007E4FF1 /* Komoot_ChallengeUITestsLaunchTests.swift */,
+			);
+			path = "Komoot-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		B3AFD2302866F3B0007E4FF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD2462867C633007E4FF1 /* Komoot Location */,
+				B3AFD2452867C61F007E4FF1 /* Flick APIs */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3AFD2412867B50C007E4FF1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD1FB2866DF86007E4FF1 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B3AFD2422867B51D007E4FF1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD23F28679318007E4FF1 /* Coordinator.swift */,
+				B3AFD2532867D15F007E4FF1 /* MainCoordinator.swift */,
+				B3AFD2512867D129007E4FF1 /* LocationServicesInteractor.swift */,
+				B3AFD25928680D01007E4FF1 /* FlickrServicesInteractor.swift */,
+				B310D34E2869273F009DA717 /* PhotoStorageInteractor.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B3AFD2432867B538007E4FF1 /* Photos Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD2562867D4EC007E4FF1 /* Views */,
+				B3AFD2552867D4E3007E4FF1 /* View Models */,
+			);
+			path = "Photos Feed";
+			sourceTree = "<group>";
+		};
+		B3AFD2442867B552007E4FF1 /* Location Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD22E2866E050007E4FF1 /* LocationPermissionsViewController.swift */,
+			);
+			path = "Location Permissions";
+			sourceTree = "<group>";
+		};
+		B3AFD2452867C61F007E4FF1 /* Flick APIs */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD24F2867D001007E4FF1 /* FlickrAPIService+Models.swift */,
+				B3E44B582868BEAE008D41D6 /* FlickrAPIKeys.swift */,
+				B3AFD2372867484E007E4FF1 /* FlickrAPIService.swift */,
+				B3AFD24B2867CAFC007E4FF1 /* FlickrAPIServiceType.swift */,
+				B3AFD24D2867CEA4007E4FF1 /* FlickrAPIService+URLHelpers.swift */,
+			);
+			path = "Flick APIs";
+			sourceTree = "<group>";
+		};
+		B3AFD2462867C633007E4FF1 /* Komoot Location */ = {
+			isa = PBXGroup;
+			children = (
+				B3E44B542868A1E0008D41D6 /* KomootLocationService+Models.swift */,
+				B3AFD2312866F3D0007E4FF1 /* KomootLocationService.swift */,
+				B3AFD2472867C65B007E4FF1 /* KomootLocationServiceType.swift */,
+				B3AFD2492867CA06007E4FF1 /* KomootLocationService+CLLocationManagerDelegate.swift */,
+			);
+			path = "Komoot Location";
+			sourceTree = "<group>";
+		};
+		B3AFD2552867D4E3007E4FF1 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD23B286757E3007E4FF1 /* PhotoViewModel.swift */,
+				B3AFD23D28675802007E4FF1 /* PhotoListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B3AFD2562867D4EC007E4FF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD2332866F9F6007E4FF1 /* PhotosViewController.swift */,
+				B3AFD2352866FF08007E4FF1 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3E44B562868A862008D41D6 /* User Interface Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B3E44B572868A8C3008D41D6 /* Root */,
+				B3AFD2442867B552007E4FF1 /* Location Permissions */,
+				B3AFD2432867B538007E4FF1 /* Photos Feed */,
+			);
+			path = "User Interface Scenes";
+			sourceTree = "<group>";
+		};
+		B3E44B572868A8C3008D41D6 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD1FF2866DF86007E4FF1 /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3AFD1F72866DF86007E4FF1 /* Komoot-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3AFD2252866DF88007E4FF1 /* Build configuration list for PBXNativeTarget "Komoot-Challenge" */;
+			buildPhases = (
+				B3AFD1F42866DF86007E4FF1 /* Sources */,
+				B3AFD1F52866DF86007E4FF1 /* Frameworks */,
+				B3AFD1F62866DF86007E4FF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Komoot-Challenge";
+			productName = "Komoot-Challenge";
+			productReference = B3AFD1F82866DF86007E4FF1 /* Komoot-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3AFD2102866DF88007E4FF1 /* Komoot-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3AFD2282866DF88007E4FF1 /* Build configuration list for PBXNativeTarget "Komoot-ChallengeTests" */;
+			buildPhases = (
+				B3AFD20D2866DF88007E4FF1 /* Sources */,
+				B3AFD20E2866DF88007E4FF1 /* Frameworks */,
+				B3AFD20F2866DF88007E4FF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3AFD2132866DF88007E4FF1 /* PBXTargetDependency */,
+			);
+			name = "Komoot-ChallengeTests";
+			productName = "Komoot-ChallengeTests";
+			productReference = B3AFD2112866DF88007E4FF1 /* Komoot-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3AFD21A2866DF88007E4FF1 /* Komoot-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3AFD22B2866DF88007E4FF1 /* Build configuration list for PBXNativeTarget "Komoot-ChallengeUITests" */;
+			buildPhases = (
+				B3AFD2172866DF88007E4FF1 /* Sources */,
+				B3AFD2182866DF88007E4FF1 /* Frameworks */,
+				B3AFD2192866DF88007E4FF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3AFD21D2866DF88007E4FF1 /* PBXTargetDependency */,
+			);
+			name = "Komoot-ChallengeUITests";
+			productName = "Komoot-ChallengeUITests";
+			productReference = B3AFD21B2866DF88007E4FF1 /* Komoot-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3AFD1F02866DF86007E4FF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B3AFD1F72866DF86007E4FF1 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					B3AFD2102866DF88007E4FF1 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = B3AFD1F72866DF86007E4FF1;
+					};
+					B3AFD21A2866DF88007E4FF1 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = B3AFD1F72866DF86007E4FF1;
+					};
+				};
+			};
+			buildConfigurationList = B3AFD1F32866DF86007E4FF1 /* Build configuration list for PBXProject "Komoot-Challenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3AFD1EF2866DF86007E4FF1;
+			productRefGroup = B3AFD1F92866DF86007E4FF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3AFD1F72866DF86007E4FF1 /* Komoot-Challenge */,
+				B3AFD2102866DF88007E4FF1 /* Komoot-ChallengeTests */,
+				B3AFD21A2866DF88007E4FF1 /* Komoot-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3AFD1F62866DF86007E4FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AFD20B2866DF88007E4FF1 /* LaunchScreen.storyboard in Resources */,
+				B3AFD2082866DF88007E4FF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AFD20F2866DF88007E4FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AFD2192866DF88007E4FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3AFD1F42866DF86007E4FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AFD24A2867CA06007E4FF1 /* KomootLocationService+CLLocationManagerDelegate.swift in Sources */,
+				B3AFD2322866F3D0007E4FF1 /* KomootLocationService.swift in Sources */,
+				B3AFD25A28680D01007E4FF1 /* FlickrServicesInteractor.swift in Sources */,
+				B3AFD2362866FF08007E4FF1 /* PhotoCollectionViewCell.swift in Sources */,
+				B3AFD2382867484E007E4FF1 /* FlickrAPIService.swift in Sources */,
+				B3AFD2482867C65B007E4FF1 /* KomootLocationServiceType.swift in Sources */,
+				B3E44B552868A1E0008D41D6 /* KomootLocationService+Models.swift in Sources */,
+				B3AFD23E28675802007E4FF1 /* PhotoListViewModel.swift in Sources */,
+				B3AFD2062866DF86007E4FF1 /* Komoot_Challenge.xcdatamodeld in Sources */,
+				B3E44B592868BEAF008D41D6 /* FlickrAPIKeys.swift in Sources */,
+				B3AFD2542867D15F007E4FF1 /* MainCoordinator.swift in Sources */,
+				B3AFD22F2866E050007E4FF1 /* LocationPermissionsViewController.swift in Sources */,
+				B310D34F2869273F009DA717 /* PhotoStorageInteractor.swift in Sources */,
+				B3AFD2522867D129007E4FF1 /* LocationServicesInteractor.swift in Sources */,
+				B3AFD2002866DF86007E4FF1 /* RootViewController.swift in Sources */,
+				B3AFD2342866F9F6007E4FF1 /* PhotosViewController.swift in Sources */,
+				B3AFD24028679318007E4FF1 /* Coordinator.swift in Sources */,
+				B3AFD24E2867CEA4007E4FF1 /* FlickrAPIService+URLHelpers.swift in Sources */,
+				B3AFD24C2867CAFC007E4FF1 /* FlickrAPIServiceType.swift in Sources */,
+				B3AFD2502867D001007E4FF1 /* FlickrAPIService+Models.swift in Sources */,
+				B3AFD1FC2866DF86007E4FF1 /* AppDelegate.swift in Sources */,
+				B3AFD23C286757E3007E4FF1 /* PhotoViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AFD20D2866DF88007E4FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AFD2162866DF88007E4FF1 /* Komoot_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AFD2172866DF88007E4FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AFD2202866DF88007E4FF1 /* Komoot_ChallengeUITests.swift in Sources */,
+				B3AFD2222866DF88007E4FF1 /* Komoot_ChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3AFD2132866DF88007E4FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3AFD1F72866DF86007E4FF1 /* Komoot-Challenge */;
+			targetProxy = B3AFD2122866DF88007E4FF1 /* PBXContainerItemProxy */;
+		};
+		B3AFD21D2866DF88007E4FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3AFD1F72866DF86007E4FF1 /* Komoot-Challenge */;
+			targetProxy = B3AFD21C2866DF88007E4FF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3AFD2092866DF88007E4FF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3AFD20A2866DF88007E4FF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3AFD2232866DF88007E4FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3AFD2242866DF88007E4FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3AFD2262866DF88007E4FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Komoot-Challenge/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "In order to stream nearby images from Flickr, komoot needs access your device's GPS";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to stream nearby images from Flickr, komoot needs access your device's GPS";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palancica.Komoot-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3AFD2272866DF88007E4FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Komoot-Challenge/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "In order to stream nearby images from Flickr, komoot needs access your device's GPS";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to stream nearby images from Flickr, komoot needs access your device's GPS";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palancica.Komoot-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3AFD2292866DF88007E4FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palancica.Komoot-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Komoot-Challenge.app/Komoot-Challenge";
+			};
+			name = Debug;
+		};
+		B3AFD22A2866DF88007E4FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palancica.Komoot-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Komoot-Challenge.app/Komoot-Challenge";
+			};
+			name = Release;
+		};
+		B3AFD22C2866DF88007E4FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palancica.Komoot-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Komoot-Challenge";
+			};
+			name = Debug;
+		};
+		B3AFD22D2866DF88007E4FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palancica.Komoot-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Komoot-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3AFD1F32866DF86007E4FF1 /* Build configuration list for PBXProject "Komoot-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AFD2232866DF88007E4FF1 /* Debug */,
+				B3AFD2242866DF88007E4FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3AFD2252866DF88007E4FF1 /* Build configuration list for PBXNativeTarget "Komoot-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AFD2262866DF88007E4FF1 /* Debug */,
+				B3AFD2272866DF88007E4FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3AFD2282866DF88007E4FF1 /* Build configuration list for PBXNativeTarget "Komoot-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AFD2292866DF88007E4FF1 /* Debug */,
+				B3AFD22A2866DF88007E4FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3AFD22B2866DF88007E4FF1 /* Build configuration list for PBXNativeTarget "Komoot-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AFD22C2866DF88007E4FF1 /* Debug */,
+				B3AFD22D2866DF88007E4FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3AFD2042866DF86007E4FF1 /* Komoot_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3AFD2052866DF86007E4FF1 /* Komoot_Challenge.xcdatamodel */,
+			);
+			currentVersion = B3AFD2052866DF86007E4FF1 /* Komoot_Challenge.xcdatamodel */;
+			path = Komoot_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B3AFD1F02866DF86007E4FF1 /* Project object */;
+}
